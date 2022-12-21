@@ -1,4 +1,25 @@
 \graphicspath{{images/\partNumber/}}%путь к рисункам
 \begin{frame}
-	\frametitle{I. Исследование нелинейных колебаний динамически симметричного спутника на круговой орбите при резонансе 1:1}
+	\frametitle{\bf I. Исследование нелинейных колебаний динамически симметричного спутника на круговой орбите при резонансе 1:1}
+	Матрица коэффициентов линеаризованных уравнений приводится к диагональной форме, то есть положение равновесия устойчиво в линейном приближении. 
+	\begin{multline*}
+		H= \frac12\frac{p_\psi^2}{\sin^2\theta}+\frac{p_\theta^2}2-\cot\theta \skobkiKr{\cos\psi + \frac{\alpha\beta}{\sin\theta}} p_\psi -p_\theta\sin\psi +\frac{\alpha\beta\cos\psi}{\sin\theta}+\\
+		+\frac{\cos^2\theta}{2}\skobkiKr{\frac{\alpha^2\beta^2}{\sin^2\theta} + 3\skobkiKr{\alpha-1}},
+	\end{multline*}
+	
+	\begin{columns}
+			\column{0.3\textwidth}
+				\begin{align*}
+					\alpha&=C/A& \skobkiKr{0\leqslant\alpha\leqslant2},\\
+					\beta&=r_0/\omega_0,&
+				\end{align*}
+			\column{0.7\textwidth}
+			Окрестность цилиндрической прецессии
+			\begin{align*}
+				\psi &= \pi,& \theta &= \pi/2,&
+				p_\psi &= 0,& p_\theta &= 0
+			\end{align*}
+	\end{columns}
+	
+	Для значений $\alpha {=} 1$, $\beta {=} 2$ частоты малых колебаний линеаризованных уравнений возмущенного движения равны $\omega_1{=}\omega_2{=}1$ --- реализуется резонанс 1:1.
 \end{frame}
