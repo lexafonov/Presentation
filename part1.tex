@@ -21,5 +21,25 @@
 			\end{align*}
 	\end{columns}
 	
-	Для значений $\alpha {=} 1$, $\beta {=} 2$ частоты малых колебаний линеаризованных уравнений возмущенного движения равны $\omega_1{=}\omega_2{=}1$ --- реализуется резонанс 1:1.
+	Для значений $\alpha = 1$, $\beta = 2$ частоты малых колебаний линеаризованных уравнений возмущенного движения, равных $\omega_1=\omega_2=1$, реализуется резонанс 1:1.
+\end{frame}
+
+\begin{frame}
+	\frametitle{I. Преобразование гамильтониана}
+	Введем малый параметр $\varepsilon$ $\skobkiKr{0<\varepsilon\ll1}$ и положим $\alpha = 1+\varepsilon\alpha_1$, $\beta = 2+\varepsilon\beta_1$.	
+	\begin{multline*}
+		\Gamma=R_2+\tfrac12 \varepsilon\skobkiKv{R_2\skobkiKr{\beta_1+2\alpha_1}+\tfrac14 R_2^2}+ \varepsilon\skobki{[}{.}{\tfrac12 R_1\skobkiKr{R_2-R_1} \sin^2\Phi_1 + }\\
+		+\skobki{.}{]}{\tfrac32 \alpha_1R_1+\skobkiKr{\beta_1+2\alpha_1+\tfrac{R_2}2}\sqrt{R_1}\sqrt{R_2-R_1}\sin\Phi_1}+O\skobkiKr{\varepsilon^2},\label{3.10}
+	\end{multline*}
+	В приближенном гамильтониане, в котором отброшено слагаемое $O\skobkiKr{\varepsilon^2}$, координата $\Phi_2$ циклическая, и $R_2=c=\const>0$. Положим $R_1 = c r$ $\skobkiKr{0\leqslant r\leqslant1}$, $\eta = \varepsilon c\tau$, $a={3\alpha_1}/c$ и $b=\skobkiKr{2\beta_1+4\alpha_1}/c+1$.
+	
+	В декартовых координатах $x=\sqrt{2 r}\sin{\Phi_1}$, $y=\sqrt{2 r}\cos{\Phi_1}$ гамильтониан имеет вид
+	\begin{eqnarray*}
+		&\gamma'=\frac a4\skobkiKr{x^2+y^2}+\frac b4\sqrt{2-x^2-y^2}x+\frac{x^2}8\skobkiKr{2-x^2-y^2}.
+		\label{4.4}
+	\end{eqnarray*}
+	\begin{align*}
+		\frac{dx}{d\eta} &= {\frac{y}4 \skobkiKv{\sqrt{2-x^2-y^2}\skobkiKr{2a-x^2}-bx}}/{\sqrt{2-x^2-y^2}},\\
+		\frac{dy}{d\eta} &= -\frac{\sqrt{2-x^2-y^2}x\skobkiKr{2a+2-2x^2-y^2}+b\skobkiKr{2-2x^2-y^2}}{4\sqrt{2-x^2-y^2}}.
+	\end{align*}
 \end{frame}
